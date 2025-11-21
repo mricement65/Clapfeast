@@ -1,3 +1,4 @@
+/* this part of css is of the main page */
 :root{
     margin: 0;
     padding: 0;
@@ -32,6 +33,7 @@ body{
     margin-left: 20px;
     font-size: 16px;
     transition: 0.3s;
+
 }
 .header div a:hover{
     color: #ffe3d8;
@@ -218,4 +220,123 @@ footer .social-links a:hover {
         display: inline-block; 
         margin: 5px 10px; 
     } 
+}
+
+/* this part of css is of login page*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 5%;
+    background: #ff3c00;
+    color: #fff;
+    font-weight: bold;
+}
+.header div a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.header div a:hover {
+    color: #ffe3d8;
+    transform: scale(1.1);
+}
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+.login-container {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=60") 
+        center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.login-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+.login-box h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.login-box p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #555;
+}
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+.input-group label {
+    font-size: 14px;
+    color: #444;
+}
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+.input-group input:focus {
+    border-color: #ff3c00;
+    box-shadow: 0 0 5px rgba(255, 60, 0, 0.4);
+}
+.login-btn {
+    width: 100%;
+    background: #ff3c00;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login-btn:hover {
+    background: #e23600;
+    transform: scale(1.03);
+}
+.forgot,
+.signup {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.forgot a,
+.signup a {
+    color: #ff3c00;
+    text-decoration: none;
+    font-weight: bold;
+}
+.forgot a:hover,
+.signup a:hover {
+    text-decoration: underline;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+@media (max-width: 480px) {
+    .login-box {
+        padding: 30px;
+    }
+    .login-box h2 {
+        font-size: 24px;
+    }
 }
