@@ -61,3 +61,110 @@ body{
         margin: 5px 0; 
     } 
 } 
+.main { 
+    background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80') 
+    center/cover no-repeat; 
+    height: 80vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    color: white; 
+    padding: 20px; 
+} 
+.main h1 { 
+    font-size: 48px; 
+    margin-bottom: 15px; 
+    text-shadow: 0 0 10px black; 
+    transition: 0.3s; 
+} 
+.main h1:hover { 
+    transform: scale(1.05); 
+} 
+.main p { 
+    font-size: 20px; 
+    margin-bottom: 20px; 
+} 
+.btn { 
+    background: #ff3c00; 
+    padding: 12px 25px; 
+    border-radius: 5px; 
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 18px; 
+    transition: 0.3s; 
+} 
+.btn:hover { 
+    background: #e23600; 
+    transform: translateY(-3px) scale(1.05); 
+}  
+@media (max-width: 768px) { 
+    .main { 
+        height: auto; 
+        padding: 60px 20px; 
+    } 
+    .main h1 { font-size: 32px; } 
+    .main p { font-size: 16px; } 
+} 
+.menu { 
+    padding: 60px 0; 
+    background: #fafafa;
+} 
+.section-title { 
+    text-align: center; 
+    font-size: 32px; 
+    font-weight: bold; 
+    margin-bottom: 40px; 
+} 
+.menu-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+    gap: 25px; 
+} 
+.menu-item { 
+    background: #fff; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    transition: 0.3s ease; 
+    cursor: pointer; 
+} 
+.menu-item:hover { 
+    transform: translateY(-8px) scale(1.02); 
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15); } 
+    .menu-item-image { 
+        height: 160px; 
+        background: #ddd url('https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=800&q=60') center/cover; 
+        transition: 0.4s; 
+    } 
+    .menu-item:hover .menu-item-image { 
+        filter: brightness(1.1); 
+        transform: scale(1.05); 
+    } 
+    .menu-item-content { 
+        padding: 20px; 
+    } 
+    .menu-item h3 { 
+        font-size: 20px; 
+        margin-bottom: 5px; 
+    } 
+    .price { 
+        font-size: 18px; 
+        color: #ff3c00; 
+        font-weight: bold; 
+        margin-top: 10px; 
+    } 
+    .order-btn { 
+        display: inline-block; 
+        margin-top: 10px; 
+        background: #ff3c00; 
+        padding: 8px 16px; 
+        border-radius: 5px; 
+        color: white; 
+        text-decoration: none; 
+        transition: 0.3s ease; 
+    } 
+    .order-btn:hover { 
+        background: #e23600; 
+        transform: translateY(-3px) scale(1.05); 
+}
