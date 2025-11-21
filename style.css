@@ -342,7 +342,7 @@ footer .social-links a:hover {
 }
 
 /*this part is the menu page*/
-.menu-hero {
+.menu {
     background: url('https://images.unsplash.com/photo-1498654200943-1088dd4438ae?auto=format&fit=crop&w=1200&q=80')
         center/cover no-repeat;
     height: 40vh;
@@ -352,18 +352,18 @@ footer .social-links a:hover {
     text-align: center;
 }
 
-.menu-hero-content {
+.menu-content {
     background: rgba(0,0,0,0.45);
     padding: 20px 35px;
     border-radius: 10px;
 }
 
-.menu-hero h1 {
+.menu h1 {
     font-size: 42px;
     color: #fff;
 }
 
-.menu-hero p {
+.menu p {
     color: #f4f4f4;
     font-size: 18px;
 }
