@@ -313,18 +313,15 @@ footer .social-links a:hover {
     background: #e23600;
     transform: scale(1.03);
 }
-.forgot,
 .signup {
     margin-top: 10px;
     font-size: 14px;
 }
-.forgot a,
 .signup a {
     color: #ff3c00;
     text-decoration: none;
     font-weight: bold;
 }
-.forgot a:hover,
 .signup a:hover {
     text-decoration: underline;
 }
